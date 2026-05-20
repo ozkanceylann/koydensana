@@ -1,113 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Köyden Sana</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f8f5ef;
-        --primary: #4f6f3b;
-        --text: #2f2f2f;
-        --card: #ffffff;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Köydensana.com | Yapım Aşamasında</title>
 
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Roboto, sans-serif;
-        color: var(--text);
-        background: linear-gradient(180deg, #f8f5ef 0%, #f2ecdf 100%);
-      }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1b5e20, #66bb6a);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-      .hero {
-        min-height: 48vh;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        padding: 4rem 1rem 2rem;
-      }
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
 
-      h1 {
-        margin: 0;
-        font-size: clamp(2rem, 6vw, 4rem);
-        color: var(--primary);
-      }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
 
-      .subtitle {
-        margin-top: 1rem;
-        font-size: clamp(1rem, 2vw, 1.2rem);
-      }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
 
-      .products {
-        width: min(1100px, 92%);
-        margin: 0 auto 4rem;
-      }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      background: rgba(0,0,0,0.2);
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
 
-      .products h2 {
-        text-align: center;
-        color: var(--primary);
-        margin-bottom: 1.5rem;
-      }
+    .contact {
+      margin-top: 25px;
+      padding: 12px 18px;
+      background: #ffffff;
+      color: #1b5e20;
+      display: inline-block;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1rem;
-      }
+    .contact:hover {
+      background: #f1f1f1;
+    }
 
-      .card {
-        background: var(--card);
-        border-radius: 14px;
-        overflow: hidden;
-        box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-      }
+    footer {
+      margin-top: 30px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
 
-      .card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        display: block;
-      }
+<body>
+  <div class="container">
+    <div class="badge">🚧 Yapım Aşamasında</div>
 
-      .card p {
-        margin: 0;
-        padding: 0.85rem 1rem 1rem;
-        font-weight: 600;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <div>
-          <h1>Köyden Sana</h1>
-          <p class="subtitle">Şu anda yapım aşamasındayız.</p>
-        </div>
-      </section>
+    <h1>Köydensana.com</h1>
 
-      <section class="products">
-        <h2>Doğal Köy Ürünleri</h2>
-        <div class="grid">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=900&q=80" alt="Doğal köy peyniri" />
-            <p>Köy Peyniri</p>
-          </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=900&q=80" alt="Doğal zeytin" />
-            <p>Doğal Zeytin</p>
-          </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=900&q=80" alt="Süzme bal" />
-            <p>Süzme Bal</p>
-          </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?auto=format&fit=crop&w=900&q=80" alt="Organik yumurta" />
-            <p>Organik Yumurta</p>
-          </article>
-        </div>
-      </section>
-    </main>
-  </body>
+    <p>
+      Doğal köy ürünleri çok yakında sizlerle!<br>
+      En taze zeytin, zeytinyağı, salça ve daha fazlası için hazırlıklarımız devam ediyor.
+    </p>
+
+    <p>
+      🏡 Köyden sofranıza gelen doğal lezzetler yakında burada olacak.
+    </p>
+
+    <a class="contact" href="mailto:info@koydensana.com">
+      Bize Ulaş
+    </a>
+
+    <footer>
+      © 2026 Köydensana.com - Tüm hakları saklıdır.
+    </footer>
+  </div>
+</body>
 </html>
