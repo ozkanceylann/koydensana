@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Köyden Sana</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8f5ef;
+        --primary: #4f6f3b;
+        --text: #2f2f2f;
+        --card: #ffffff;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #f8f5ef 0%, #f2ecdf 100%);
+      }
+
+      .hero {
+        min-height: 48vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 4rem 1rem 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 6vw, 4rem);
+        color: var(--primary);
+      }
+
+      .subtitle {
+        margin-top: 1rem;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+      }
+
+      .products {
+        width: min(1100px, 92%);
+        margin: 0 auto 4rem;
+      }
+
+      .products h2 {
+        text-align: center;
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card p {
+        margin: 0;
+        padding: 0.85rem 1rem 1rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Köyden Sana</h1>
+          <p class="subtitle">Şu anda yapım aşamasındayız.</p>
+        </div>
+      </section>
+
+      <section class="products">
+        <h2>Doğal Köy Ürünleri</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=900&q=80" alt="Doğal köy peyniri" />
+            <p>Köy Peyniri</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=900&q=80" alt="Doğal zeytin" />
+            <p>Doğal Zeytin</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=900&q=80" alt="Süzme bal" />
+            <p>Süzme Bal</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?auto=format&fit=crop&w=900&q=80" alt="Organik yumurta" />
+            <p>Organik Yumurta</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
